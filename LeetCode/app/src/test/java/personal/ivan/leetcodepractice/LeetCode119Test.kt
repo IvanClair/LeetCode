@@ -9,14 +9,14 @@ class LeetCode119Test {
     @Test
     fun leetCode1119_Ex1_isCorrect() {
         val expected = "ltcdscmmntyfrcdrs"
-        val actual = LeetCode1119().removeVowels("leetcodeisacommunityforcoders")
+        val actual = LeetCode1119().removeVowels(input = "leetcodeisacommunityforcoders")
         Assert.assertEquals(expected, actual)
     }
 
     @Test
     fun leetCode1119_Ex2_isCorrect() {
         val expected = ""
-        val actual = LeetCode1119().removeVowels("aeiou")
+        val actual = LeetCode1119().removeVowels(input = "aeiou")
         Assert.assertEquals(expected, actual)
     }
 }
