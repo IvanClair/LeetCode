@@ -4,9 +4,6 @@ import org.junit.Assert
 import org.junit.Test
 import personal.ivan.leetcodepractice.easy.LeetCode771
 
-/**
- * [LeetCode771]
- */
 class LeetCode771Test {
 
     @Test
