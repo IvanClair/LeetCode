@@ -38,16 +38,8 @@ class LeetCode1365 {
      */
     fun smallerNumbersThanCurrent(nums: IntArray): IntArray {
         val resultArray = mutableListOf<Int>()
-        nums.forEachIndexed { i, v1 ->
-            var count = 0
-            nums.forEachIndexed { j, v2 ->
-                if (i != j && v1 > v2) {
-                    count++
-                }
-            }
-
-            resultArray.add(count)
-        }
+        val sortedArray = nums.sortedArray()
+        nums.forEach { resultArray.add(sortedArray.indexOf(it)) }
         return resultArray.toIntArray()
     }
 }
