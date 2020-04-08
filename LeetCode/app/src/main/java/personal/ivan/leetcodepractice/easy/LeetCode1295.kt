@@ -29,14 +29,6 @@ class LeetCode1295 {
      * 1 <= nums.length <= 500
      * 1 <= nums[i] <= 10^5
      */
-    fun findNumbers(nums: IntArray): Int {
-        var result = 0
-        nums.forEach {
-            if (it.toString().length % 2 == 0) {
-                result++
-            }
-        }
-
-        return result
-    }
+    fun findNumbers(nums: IntArray): Int =
+        nums.count { it.toString().length % 2 == 0 }
 }

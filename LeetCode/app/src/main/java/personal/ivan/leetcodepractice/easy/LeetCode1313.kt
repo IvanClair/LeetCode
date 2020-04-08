@@ -30,11 +30,11 @@ class LeetCode1313 {
      * nums.length % 2 == 0
      * 1 <= nums[i] <= 100
      */
-    fun decompressRLElist(nums: IntArray): IntArray {
-        val resultList = mutableListOf<Int>()
-        for (i in nums.indices step 2) {
-            repeat(nums[i]) { resultList.add(nums[i + 1]) }
-        }
-        return resultList.toIntArray()
-    }
+    fun decompressRLElist(nums: IntArray): IntArray =
+        mutableListOf<Int>()
+            .apply {
+                for (i in nums.indices step 2) {
+                    repeat(nums[i]) { add(nums[i + 1]) }
+                }
+            }.toIntArray()
 }

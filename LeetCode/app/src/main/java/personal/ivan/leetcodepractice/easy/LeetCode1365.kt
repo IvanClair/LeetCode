@@ -36,10 +36,11 @@ class LeetCode1365 {
      * 2 <= nums.length <= 500
      * 0 <= nums[i] <= 100
      */
-    fun smallerNumbersThanCurrent(nums: IntArray): IntArray {
-        val resultArray = mutableListOf<Int>()
-        val sortedArray = nums.sortedArray()
-        nums.forEach { resultArray.add(sortedArray.indexOf(it)) }
-        return resultArray.toIntArray()
-    }
+    fun smallerNumbersThanCurrent(nums: IntArray): IntArray =
+        mutableListOf<Int>()
+            .apply {
+                val sortedArray = nums.sortedArray()
+                nums.forEach { add(sortedArray.indexOf(it)) }
+            }
+            .toIntArray()
 }
