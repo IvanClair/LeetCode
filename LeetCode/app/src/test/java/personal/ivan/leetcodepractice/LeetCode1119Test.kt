@@ -4,7 +4,7 @@ import org.junit.Assert
 import org.junit.Test
 import personal.ivan.leetcodepractice.easy.LeetCode1119
 
-class LeetCode119Test {
+class LeetCode1119Test {
 
     @Test
     fun leetCode1119_Ex1_isCorrect() {
